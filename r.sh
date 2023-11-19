@@ -1,5 +1,5 @@
 apt update
-sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake -y
 git clone https://github.com/safex/safex-rig.git
 cd safex-rig && mkdir build && cd build
 cmake ..
