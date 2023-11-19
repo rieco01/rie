@@ -1,6 +1,7 @@
 apt update
-apt-get install g++ make m4 git libgmp-dev libssl-dev libcurl4-openssl-dev nlohmann-json3-dev -y
-git clone https://github.com/Pttn/rieMiner.git
-cd rieMiner
+sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+git clone https://github.com/safex/safex-rig.git
+cd safex-rig && mkdir build && cd build
+cmake ..
 make
-./rieMiner noconffile Mode=Pool Host=ric.suprnova.cc Port=5000 Username=gurubro.01 Password=01
+./xmrig -o pool.safex.org:4411 -a rx/sfx -u Safex5zuBJQE9wFkDG2hff9XetMiTv4kYRfRMDDAqrfzNT8nET5VuEjRWoiRZQJNcoggYD89AbYvgFqes8XKGyRF7PoTzcQeh9Q4v
